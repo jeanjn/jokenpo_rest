@@ -115,10 +115,10 @@ public class JogadaCore {
 	private int processarJogada(Jogada a, Jogada b) {
 		/**
 		 * Spock -> Tesoura, Pedra
-		 * Tesoura -> Papel, Largato
+		 * Tesoura -> Papel, Lagarto
 		 * Papel -> Spock, Pedra
-		 * Pedra -> Tesoura, Largato
-		 * Largato -> Spock, Papel
+		 * Pedra -> Tesoura, Lagarto
+		 * Lagarto -> Spock, Papel
 		 */
 		
 		if(a.getAcao().equals(b.getAcao())){
@@ -129,12 +129,12 @@ public class JogadaCore {
 		case Spock:
 			return (b.getAcao() == Acao.Tesoura || b.getAcao() == Acao.Pedra) ? 1 : -1;
 		case Tesoura:
-			return (b.getAcao() == Acao.Papel || b.getAcao() == Acao.Largato) ? 1 : -1;
+			return (b.getAcao() == Acao.Papel || b.getAcao() == Acao.Lagarto) ? 1 : -1;
 		case Papel:
 			return (b.getAcao() == Acao.Spock || b.getAcao() == Acao.Pedra) ? 1 : -1;
 		case Pedra:
-			return (b.getAcao() == Acao.Tesoura || b.getAcao() == Acao.Largato) ? 1 : -1;
-		case Largato:
+			return (b.getAcao() == Acao.Tesoura || b.getAcao() == Acao.Lagarto) ? 1 : -1;
+		case Lagarto:
 			return (b.getAcao() == Acao.Spock || b.getAcao() == Acao.Papel) ? 1 : -1;
 		default:
 			return 0;

@@ -6,7 +6,7 @@ public enum Acao {
 	Tesoura("Tesoura"),
 	Papel("Papel"),
 	Pedra("Pedra"),
-	Largato("Largato");
+	Lagarto("Lagarto");
 	
 	private String descricao;
 	

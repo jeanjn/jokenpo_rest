@@ -33,7 +33,7 @@ import com.jean.jokenpo.resources.JogadaResource;
 @SpringBootTest(classes = JokenpoApplication.class)
 public class JogadaResourceTest {
 	
-	private static Jogada JOGADA = new Jogada("1", Acao.Largato);
+	private static Jogada JOGADA = new Jogada("1", Acao.Lagarto);
 	
 	@Autowired
 	private JogadaResource resource;
@@ -97,7 +97,7 @@ public class JogadaResourceTest {
 		.andExpect(status().isOk()).andReturn();
 		 
 		 String resultado = mvcResult.getResponse().getContentAsString();
-		 assertEquals("{\"jogador\":\"1\",\"acao\":\"Largato\"}", resultado);
+		 assertEquals("{\"jogador\":\"1\",\"acao\":\"Lagarto\"}", resultado);
 	}
 	
 	@Test

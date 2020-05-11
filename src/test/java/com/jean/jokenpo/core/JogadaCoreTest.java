@@ -28,7 +28,7 @@ public class JogadaCoreTest {
 	
 	@Test
 	public void empateTest() throws CoreException {
-		core.cadastrar(new Jogada("1", Acao.Largato));
+		core.cadastrar(new Jogada("1", Acao.Lagarto));
 		core.cadastrar(new Jogada("2", Acao.Papel));
 		core.cadastrar(new Jogada("3", Acao.Pedra));
 		core.cadastrar(new Jogada("4", Acao.Spock));
@@ -40,7 +40,7 @@ public class JogadaCoreTest {
 	
 	@Test
 	public void tesouraTest() throws CoreException {
-		core.cadastrar(new Jogada("1", Acao.Largato));
+		core.cadastrar(new Jogada("1", Acao.Lagarto));
 		core.cadastrar(new Jogada("2", Acao.Papel));
 		core.cadastrar(new Jogada("5", Acao.Tesoura));
 		
@@ -50,7 +50,7 @@ public class JogadaCoreTest {
 	
 	@Test
 	public void tesouraEmpateTest() throws CoreException {
-		core.cadastrar(new Jogada("1", Acao.Largato));
+		core.cadastrar(new Jogada("1", Acao.Lagarto));
 		core.cadastrar(new Jogada("2", Acao.Papel));
 		core.cadastrar(new Jogada("4", Acao.Tesoura));
 		core.cadastrar(new Jogada("5", Acao.Tesoura));
@@ -60,8 +60,8 @@ public class JogadaCoreTest {
 	}
 	
 	@Test
-	public void largatoTest() throws CoreException {
-		core.cadastrar(new Jogada("1", Acao.Largato));
+	public void lagartoTest() throws CoreException {
+		core.cadastrar(new Jogada("1", Acao.Lagarto));
 		core.cadastrar(new Jogada("2", Acao.Papel));
 		core.cadastrar(new Jogada("4", Acao.Spock));
 		
@@ -81,7 +81,7 @@ public class JogadaCoreTest {
 	
 	@Test
 	public void pedraTest() throws CoreException {
-		core.cadastrar(new Jogada("1", Acao.Largato));
+		core.cadastrar(new Jogada("1", Acao.Lagarto));
 		core.cadastrar(new Jogada("3", Acao.Pedra));
 		core.cadastrar(new Jogada("5", Acao.Tesoura));
 		

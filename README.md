@@ -26,6 +26,6 @@ No jogo é permitido mais de dois jogadores, tendo como resultado um jogador ven
 ```
 {
   "jogador": "nome unico",
-  "acao": "acao" //Spock, Tesoura, Papel, Pedra e Largato
+  "acao": "acao" //Spock, Tesoura, Papel, Pedra e Lagarto
 }
 ```
